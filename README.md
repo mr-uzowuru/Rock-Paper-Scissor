@@ -41,32 +41,31 @@ The ImageDataGenerator function helps create an augmented dataset that improves 
 
 
 **Models and their different Hyperparameters Configurations** 
-To complete this course work 3 models were used, of which all gave different accuracies and loss." Model3" was chosen because it gave far better results than the others.  
+
+To complete this work 3 models were used, of which all gave different accuracies and loss." Model3" was chosen because it gave far better results than the others.  
  
-Model 1
+**Model 1**
 This model is a deep feedforward neural network with three dense layers of 512, 256 and 3 neurons, respectively. It uses a 'Flatten' layer to reshape the input data to a 1D array, and the output layer has a softmax activation function that outputs probabilities for each of the three classes
 The model was compiled with 'adam' optimizer, 'categorical cross-entropy' loss function, and 'accuracy' as the performance metric.
 When evaluated on Validation data, It gave an accuracy of 33% and a loss of 2.4  as can be seen in Figure below 
  
-Model 2
+**Model 2**
 This model is a convolutional neural network (CNN) that consists of two convolutional layers followed by a flatten layer and a dense output layer.
 
 The input shape is (300,300,1), indicating the input is a grayscale image with a size of 300x300 pixels. The first convolutional layer has 64 filters with a kernel size of 3x3, followed by a ReLU activation function. The second convolutional layer has 32 filters with a kernel size of 3x3, also followed by a ReLU activation function.
 When evaluated on Validation data, It gave an accuracy of 78% and a loss of 0.5  as can be seen in Figure below 
 
-Model 3
+**Model 3**
 The first convolutional layer has 64 filters with a kernel size of 3x3, followed by a ReLU activation function. The second convolutional layer has 32 filters with a kernel size of 3x3, also followed by a ReLU activation function. The third convolutional layer has 32 filters with a kernel size of 3x3 and again followed by a ReLU activation function.
 
 The dropout layer is added to reduce overfitting by randomly dropping out 50% of the neurons in the previous layer during training.
 When evaluated on Validation data, It gave an accuracy of 78% and a loss of 0.5  as can be seen in Figure below 
 
-The Game
+**The Game**
 As instructed in the CW a game of a rock papers scissors of needs was require for extra credit.
-To this a function  had to be written to take 3 arguments (2 images and the model) after which based on the set of if/else conditions a decision is made with the help of the model and a result is returned. 
-Definition 
+To this a function  had to be written to take 3 arguments (2 images and the model) after which based on the set of if/else conditions a decision is made with the help of the model and a result is returned.
 
-
-Conclusion
+**Conclusion**
 In conclusion, though my final model has a high accuracy rate in both train and test validation, more could still be done to improve the model, which is something I intend to do in my personal time. The CW opened me up to how some of the fundamentals taught during the semester could be applied to solve real-life problems in CV.
 I also gained insight into how to changes in hyperparameters could make your model relatively better or worse.
 And finally, the last part of developing the function for my rock paper scissor game gave me the opportunity to implement my model in a real-time. 
