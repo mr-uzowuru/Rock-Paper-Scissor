@@ -1,11 +1,5 @@
 # Rock-Paper-Scissor
 
-
-
-
-
-
-
 **A brief description of the selected image processing and data augmentation methods**
 
 1. Rescaling: This method rescales the pixel values of the images by a factor of 1/255 to normalize them to the range [0, 1].It helps prevent the model from becoming too sensitive to the scale of pixel values, making it easier for the model to learn features invariant to changes in brightness and contrast.
